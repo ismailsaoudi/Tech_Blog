@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+
+  "engines": {
+    "node": "16.x"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ismailsaoudi",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
@@ -19,6 +23,15 @@
     "express-session": "^1.17.3",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "node": "^16.17.0",
     "sequelize": "^6.21.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismailsaoudi/Tech_Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ismailsaoudi/Tech_Blog/issues"
+  },
+  "homepage": "https://github.com/ismailsaoudi/Tech_Blog"
 }
