@@ -1,13 +1,4 @@
 const path = require('path');
-
-// declare react files in build as static
-app.use(express.static(path.join(__dirname, "build")));
-
-// serve index.html from the build folder
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
-
 const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
@@ -43,6 +34,17 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
+
+// declare react files in build as static
+app.use(express.static(path.join(__dirname, "build")));
+
+// serve index.html from the build folder
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
+
+
 app.use(routes);
 
 sequelize.sync();
