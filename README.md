@@ -10,3 +10,4 @@ This application allows various different users to create an account and post bl
 ![webpage screenshot](./public/images/webpage-screenshot.png)
 
 # Application Link
+https://is-tech-blog.herokuapp.com
